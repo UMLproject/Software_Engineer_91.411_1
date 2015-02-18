@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:text="Login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/registerMFA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:text="RegisterMFA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/activateMFA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:text="ActivateMFA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/uploadFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:text="UploadFile"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/start_service1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:onClick="start_service1_click"
+            android:text="Start Service1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/log_msg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:onClick="log_msg_btn_click"
+            android:text="Show messages" />
+
+        <Button
+            android:id="@+id/clear_msg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:onClick="clear_msg_btn_click" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:onClick="exit_btn_click"
+            android:text="Exit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log_messages"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:ems="10"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/secondary_text_dark_nodisable" >
+
+        <requestFocus />
+    </TextView>
+
+    <TextView
+        android:id="@+id/main_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ADLSelectionListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:entries="@array/ADL_array" >
+    </ListView>
+
+</LinearLayout>

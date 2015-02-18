@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logon_background" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/register_mfa_mac"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:hint="phone mac address"
+            android:paddingLeft="10dp"
+            android:textColor="#000" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/register_mfa_mac"
+            android:layout_alignLeft="@+id/register_mfa_mac"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/register_mfa_mac_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/register_mfa_mac"
+            android:layout_alignRight="@+id/register_mfa_mac"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/clear" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/register_mfa_email"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:hint="user email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="#000" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/register_mfa_email"
+            android:layout_alignLeft="@+id/register_mfa_email"
+            android:src="@drawable/passwd_lock"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/register_mfa_email_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/register_mfa_email"
+            android:layout_alignRight="@+id/register_mfa_email"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/clear" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/register_mfa_passwd"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#000" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/register_mfa_passwd"
+            android:layout_alignLeft="@+id/register_mfa_passwd"
+            android:src="@drawable/passwd_lock"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/register_mfa_passwd_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/register_mfa_passwd"
+            android:layout_alignRight="@+id/register_mfa_passwd"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/clear" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/remember"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/layout3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/remember_passwd_uncheck"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/register_mfa"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/remember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background"
+        android:text="Register MFA" />
+<!--         android:background="@drawable/button_background" -->
+        
+
+</RelativeLayout>

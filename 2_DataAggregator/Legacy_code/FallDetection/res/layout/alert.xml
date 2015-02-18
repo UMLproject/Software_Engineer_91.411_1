@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alert_seconds_tf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Seconds Remaining: 10"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/alert_msg_tf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Did you fall?" />
+
+    <Button
+        android:id="@+id/alert_yes_btn"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonYesClick"
+        android:text="Yes, I fell." />
+
+    <Button
+        android:id="@+id/alert_no_btn"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonNoClick"
+        android:text="No, I did not fall." />
+
+</LinearLayout>

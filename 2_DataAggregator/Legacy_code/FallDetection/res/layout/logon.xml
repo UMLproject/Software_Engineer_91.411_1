@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logon_background"
+    tools:context=".LogonActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="110dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:hint="user name"
+            android:textColor="#000"
+            android:paddingLeft="10dp" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/user_name"
+            android:layout_alignLeft="@+id/user_name"
+            android:src="@drawable/user"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/clear_username"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/user_name"
+            android:layout_alignRight="@+id/user_name"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/clear" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/user_passwd"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:hint="password"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/user_passwd"
+            android:layout_alignLeft="@+id/user_passwd"
+            android:src="@drawable/passwd_lock"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/clear_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/user_passwd"
+            android:layout_alignRight="@+id/user_passwd"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/clear" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/remember"
+        android:visibility="gone"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/layout2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/remember_passwd_uncheck" />
+
+    <Button
+        android:id="@+id/logon_btn"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/remember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logon_enable" />
+
+</RelativeLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Strings -->
+    <string name="top_message">Welcome to Humansense!</string>
+
+    <!-- Widget Strings -->
+    <string name="simple_classifier_notification_widget_name">Activity Classifier</string>
+    <string name="location_status_widget_name">Location Status</string>
+    <string name="location_cluster_labeler_dialog_label">Location Labeler</string>
+    <string name="location_widget_moving_label">Currently Moving</string>
+    <string name="location_widget_location_prefix">Currently in location:</string>
+    <string name="location_widget_unknown_location">Unknown</string>
+    <string name="widget_loading">Loading data</string>
+    <string name="widget_error">Data currently unavailable</string>
+    <string name="where_are_you_text">Where are you now?</string>
+    <string name="location_labeler_widget_name">Location Labeler</string>
+    <string name="location_labeler_prompt">Select a location</string>
+    <string name="location_labeler_edittext_hint">example location</string>
+    <string name="location_labeler_dialog_label">Where are you now?</string>
+
+    <!-- Notification Strings -->
+    <string name="notification_ticker">Humansense</string>
+    <string name="notification_text">Select to provide more information.</string>
+    <string name="notification_title">Humansense Unknown Activity</string>
+    <string name="notification_upload_text">Uploading files to server&#8230;</string>
+    <string name="notification_upload_title">Humansense Uploader</string>
+
+    <!-- Utility Strings -->
+    <string name="live_file_path">data/live/</string>
+    <string name="recent_file_path">data/recent/</string>
+    <string name="uploaded_file_path">data/uploaded/</string>
+    <string name="activity_file_path">data/activity/</string>
+
+    <!-- Magnitude Graph Strings -->
+    <string name="mag_graph_title">Select a section of the graph to add a label:</string>
+    <string name="mag_graph_time_label">Time</string>
+    <string name="mag_graph_magnitude_label">Activity</string>
+    <string name="mag_graph_label_query">What were you doing in this time period?</string>
+    <string name="mag_graph_label_hint">Enter an activity (e.g. jogging)</string>
+    <string name="mag_graph_incorrect_input_toast">Please enter letters, dashes and apostrophes only.</string>
+    <string name="mag_graph_legend_label">Legend</string>
+    <string name="mag_graph_close_label">Close</string>
+
+    <!-- TDEClassifier plugin Strings -->
+    <string name="model_ini_path">models/models.ini</string>
+    <string name="models_path">models/</string>
+    <string name="manage_model_files_pref_title">Manage Model Files</string>
+    <string name="manage_model_files_pref_summary">Manage Model Files and choose which models to use for classification.</string>
+    <string name="start_building_button_text">Build</string>
+    <string name="stop_building_button_text">Stop Building</string>
+    <string name="start_classifying_button_text">Classify</string>
+    <string name="stop_classifying_button_text">Stop Classifying</string>
+
+    <!-- Object Strings -->
+    <string name="start_label">START SERVICE</string>
+    <string name="started_notification_text">Service Started</string>
+    <string name="started_notification_title">HumanSense Service</string>
+    <string name="started_notification_content">Service is Active.</string>
+    <string name="stop_label">STOP SERVICE</string>
+    <string name="upload_label">UPLOAD</string>
+    <string name="uploading_label">UPLOADING&#8230;</string>
+    <string name="upload_query">Upload data collected to online server?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="file">file</string>
+    <string name="files">files</string>
+    <string name="deleted">deleted</string>
+    <string name="delete">delete</string>
+    <string name="Deleted">Deleted</string>
+    <string name="Delete">Delete</string>
+    <string name="unuploaded">unuploaded</string>
+    <string name="uploader_appname_label">Humansense File Uploader:\n</string>
+    <string name="uploader_no_errors_one_file">1 file was uploaded to server.</string>
+    <string name="uploader_no_errors_multiple_files">files were uploaded to server.</string>
+    <string name="uploader_unable_to_connect">Unable to connect to server.</string>
+    <string name="uploader_upload_failed">One or more files have failed to upload.</string>
+    <string name="uploader_no_new_files">No new files to upload.</string>
+    <string name="uploader_no_connection">No connection could be found.</string>
+    <string name="activity_magnitude_graph_label">Activity Recognition Graph</string>
+    <string name="activity_file_manager_label">Humansense File Manager</string>
+    <string name="empty_list_text">Empty List!</string>
+    <string name="delete_checked_text">Delete Checked</string>
+    <string name="no_results_text">Results Currently Unavailable</string>
+
+    <!-- Preferences Strings -->
+    <string name="log_name_hint">example activity</string>
+    <string name="startup_options_cat">Startup Options</string>
+    <string name="auto_start_at_app_start_pref">Automatically start logging when application starts.</string>
+    <string name="auto_start_at_app_start_pref_title">Auto-Start at App Start</string>
+    <string name="auto_start_at_phone_boot_pref">Automatically start logging when phone starts.</string>
+    <string name="auto_start_at_phone_boot_pref_title">Auto-Start at Phone Boot</string>
+    <string name="log_to_file_pref">Log debugging output to a file.</string>
+    <string name="log_to_file_pref_title">Log to file</string>
+    <string name="battery_life_options_cat">Power Management Preferences</string>
+    <string name="watch_for_low_battery_pref_title">Stop service on Low Battery</string>
+    <string name="watch_for_low_battery_pref">Stops the service when the battery is low, and restarts once it has been charged.</string>
+    <string name="settingString">Settings</string>
+    <string name="uploadString">Upload</string>
+    <string name="start_phone_boot_label">Start at phone boot.</string>
+    <string name="no_start_phone_boot_label">Do not start at phone boot.</string>
+    <string name="start_app_start_label">Start at application start.</string>
+    <string name="no_start_app_start_label">Do not start at application start.</string>
+    <string name="unuploaded_management">Manage Unuploaded Files</string>
+    <string name="unuploaded_management_desc">Individually delete files that have not yet been uploaded to the server.</string>
+    <string name="manage_unuploaded_files_title">Unuploaded Files</string>
+    <string name="unuploaded_cat">Unuploaded Files</string>
+    <string name="unuploaded_title">Delete Unuploaded Files</string>
+    <string name="unuploaded_desc">Deletes all unuploaded files on your device.</string>
+    <string name="delete_files_big_warning">Are you sure you wish to delete all unuploaded files?</string>
+    <string name="delete_files_warning">Delete these files?</string>
+    <string name="file_deleted">file has been deleted.</string>
+    <string name="files_deleted">files have been deleted.</string>
+    <string name="no_files_to_delete">No files to delete.</string>
+    <string name="plugin_options_cat">Plugin Options</string>
+    <string name="input_plugin_pref_title">Input Plugins</string>
+    <string name="input_plugin_pref_description">Shows options for all input plugins installed with defined preferences.</string>
+    <string name="output_plugin_pref_title">Output Plugins</string>
+    <string name="output_plugin_pref_description">Shows options for all output plugins installed with defined preferences.</string>
+    <string name="uploader_options_cat">Uploader Options</string>
+    <string name="uploader_clear_data_title">Delete Uploaded Files</string>
+    <string name="uploader_clear_data_desc">Deletes files already uploaded to the server.\n</string>
+    <string name="uploader_auto_upload_title">Upload Automatically</string>
+    <string name="uploader_auto_upload_desc">Automatically upload files whenever they are available.\n</string>
+    <string name="uploader_only_use_wifi_title">Only Use Wi-Fi</string>
+    <string name="uploader_only_use_wifi_desc">Files are only uploaded over Wi-Fi.\n</string>
+    <string name="set_preferences">Preferences</string>
+    <string name="set_input_preferences">Input Plugin Preferences</string>
+    <string name="set_output_preferences">Output Plugin Preferences</string>
+
+    <!-- BluetoothLogger plugin preferences -->
+    <string name="bluetoothlogger_enable_pref_label">Bluetooth Plugin</string>
+    <string name="bluetoothlogger_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="bluetoothlogger_enable_pref_on">Bluetooth Logging is on.</string>
+    <string name="bluetoothlogger_enable_pref_off">Bluetooth Logging is off.</string>
+    <string name="bluetoothlogger_autoenable_pref_label">Bluetooth Auto-Enable</string>
+    <string name="bluetoothlogger_autoenable_pref_summary">Auto-Enables the Bluetooth adapter when logging is started.</string>
+    <string name="bluetoothlogger_autoenable_pref_on">Bluetooth will be Auto-Enabled when logging is started.</string>
+    <string name="bluetoothlogger_autoenable_pref_off">Bluetooth will not be Auto-Enabled when logging is started.</string>
+    <string name="bluetoothlogger_interval_pref">Bluetooth Logging Interval</string>
+    <string name="bluetoothlogger_interval_pref_summary">The time interval between two subsequent scans.</string>
+
+    <!-- GPSLogger plugin preferences -->
+    <string name="gpslogger_enable_pref_label">GPS Logging Plugin</string>
+    <string name="gpslogger_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="gpslogger_enable_pref_on">GPS Logging is on.</string>
+    <string name="gpslogger_enable_pref_off">GPS Logging is off.</string>
+    <string name="gpslogger_interval_pref">GPS Logging Interval</string>
+    <string name="gpslogger_interval_pref_summary">The time interval between two subsequent scans.</string>
+    <string name="gpslogger_distance_pref">GPS Minimum Distance</string>
+    <string name="gpslogger_distance_pref_summary">The minimum distance that has to be travelled between two subsequent scans.</string>
+    <string name="gpslogger_timeout_pref">GPS Timeout</string>
+    <string name="gpslogger_timeout_pref_summary">Amount of time after which we stop scanning if we cannot get a GPS fix.</string>
+
+    <!-- GSMLogger plugin preferences -->
+    <string name="gsmlogger_enable_pref_label">GSM Logging Plugin</string>
+    <string name="gsmlogger_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="gsmlogger_enable_pref_on">GSM Logging is on.</string>
+    <string name="gsmlogger_enable_pref_off">GSM Logging is off.</string>
+
+    <!-- SensorLogger plugin preferences -->
+    <string name="sensorlogger_enable_pref_label">Sensor Logging Plugin</string>
+    <string name="sensorlogger_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="sensorlogger_enable_pref_on">Sensor Logging is on.</string>
+    <string name="sensorlogger_enable_pref_off">Sensor Logging is off.</string>
+    <string name="sensorlogger_interval_pref">Sensor Speed</string>
+    <string name="sensorlogger_interval_pref_summary">The logging speed of the accelerometer.</string>
+    <string name="sensorlogger_orientation_pref">Estimate Orientation</string>
+    <string name="sensorlogger_orientation_pref_summary">Tries to estimate orientation using magnetic field sensors and acccelerometer. This is a fairly expensive computation, and gives fairly inaccurate results.</string>
+    <string name="sensorlogger_orientation_pref_on">Orientation Estimation is enabled.</string>
+    <string name="sensorlogger_orientation_pref_off">Orientation Estimation is disabled.</string>
+
+    <!-- WifiLogger plugin preferences -->
+    <string name="wifilogger_enable_pref_label">Wifi Logging Plugin</string>
+    <string name="wifilogger_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="wifilogger_enable_pref_on">Wifi Logging is on.</string>
+    <string name="wifilogger_enable_pref_off">Wifi Logging is off.</string>
+    <string name="wifilogger_interval_pref">Wifi Logging Interval</string>
+    <string name="wifilogger_interval_pref_summary">The time interval between two subsequent scans.</string>
+
+    <!-- LocationClusterer plugin preferences -->
+    <string name="locationclusterer_enable_pref_label">Location Clustering Plugin</string>
+    <string name="locationclusterer_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="locationclusterer_enable_pref_on">Location Clustering is on.</string>
+    <string name="locationclusterer_enable_pref_off">Location Clustering is off.</string>
+    <string name="locationclusterer_manage_gps_pref_label">Manage GPS Sensor</string>
+    <string name="locationclusterer_manage_gps_pref_summary">Use the results of the motion estimation algorithm to enable and disable the GPS sensor.</string>
+    <string name="locationclusterer_manage_gps_pref_on">GPS Management is on.</string>
+    <string name="locationclusterer_manage_gps_pref_off">GPS Management is off.</string>
+    <string name="location_input_edittext_hint">location name (e.g., home, my office, etc.)</string>
+
+    <!-- FileOutput plugin preferences -->
+    <string name="fileoutput_buffersize_pref">Buffer Size</string>
+    <string name="fileoutput_buffersize_pref_summary">The size of the BufferedOutputStream buffer.</string>
+    <string name="fileoutput_enable_pref_label">File Output Plugin</string>
+    <string name="fileoutput_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="fileoutput_enable_pref_on">File output is on.</string>
+    <string name="fileoutput_enable_pref_off">File output is off.</string>
+    <string name="fileoutput_rolloverinterval_pref">File Rollover Interval</string>
+    <string name="fileoutput_rolloverinterval_pref_summary">How often should new log files be started.</string>
+    <string name="fileoutput_log_sensor_data_pref_label">Log Sensor Data</string>
+    <string name="fileoutput_log_sensor_data_pref_summary">Log all sensor data (consumes a fair amount of disk space).</string>
+    <string name="fileoutput_log_sensor_data_pref_on">Sensor data logging is on.</string>
+    <string name="fileoutput_log_sensor_data_pref_off">Sensor data logging output is off.</string>
+
+    <!-- ScreenOutput plugin preferences -->
+    <string name="screenoutput_enable_pref_label">Screen Output Plugin</string>
+    <string name="screenoutput_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="screenoutput_enable_pref_on">Screen output is on.</string>
+    <string name="screenoutput_enable_pref_off">Screen output is off.</string>
+
+    <!-- TestMagOutput plugin preferences -->
+    <string name="testmagoutput_enable_pref_label">TestMag Output Plugin</string>
+    <string name="testmagoutput_enable_pref_summary">Enables or disables this plugin.</string>
+    <string name="testmagoutput_enable_pref_on">TestMag output is on.</string>
+    <string name="testmagoutput_enable_pref_off">TestMag output is off.</string>
+
+    <!-- ClassifierOutput plugin preferences -->
+    <string name="simpleclassifier_enable_pref_label">Activity Classifier Plugin</string>
+    <string name="simpleclassifier_enable_pref_summary">Estimates motion state via the accelerometer.</string>
+    <string name="simpleclassifier_enable_pref_on">Activity Classifier is enabled.</string>
+    <string name="simpleclassifier_enable_pref_off">Activity Classifier is disabled.</string>
+    <string name="accelerometerLingeringThresholds">Lingering Power Threshold</string>
+    <string name="accelerometerLingeringThresholdDefault">10</string>
+    <string name="accelerometerLingeringThresholdSummary">The threshold for classifying activity as lingering.</string>
+    <string name="accelerometerLingeringWindow">Lingering Power Window</string>
+    <string name="accelerometerLingeringWindowDefault">25</string>
+    <string name="accelerometerLingeringWindowSummary">The number of samples to consider for lingering classification.</string>
+    <string name="manage_model_files_title">Available Model Files</string>
+    <string name="simpleclassifier_enable_remote_logging_pref_label">Log to Remote Server</string>
+    <string name="simpleclassifier_enable_remote_logging_pref_summary">Send classification results to a remote log server.</string>
+    <string name="simpleclassifier_enable_remote_logging_pref_on">Remote Logging is enabled.</string>
+    <string name="simpleclassifier_enable_remote_logging_pref_off">Remote Logging is disabled.</string>
+    <string name="simpleclassifier_remote_logging_host_pref_label">Set Remote Server</string>
+    <string name="simpleclassifier_remote_logging_host_pref_summary">Set the remote server hostname.</string>
+    <string name="simpleclassifier_remote_logging_host_pref_dialogmsg">Enter the username and hostname to connect to. Should be of the form: username@hostname.</string>
+    <string name="simpleclassifier_remote_logging_host_pref_dialogtitle">Remote Logging Server</string>
+
+    <!-- Notification-related preferences -->
+    <string name="notification_prefs_cat">Notification Settings</string>
+    <string name="notification_enable_title">Notifications</string>
+    <string name="notification_enable_summary">Enables or disables notifications.\n(WARNING: Disabling notifications will reduce the effectiveness of activity recognition.)</string>
+    <string name="notification_sounds_title">Notification Sounds</string>
+    <string name="notification_sounds_summary">Enables or disables sounds when notifications are pushed.</string>
+    <string name="notification_vibrate_title">Notification Vibration</string>
+    <string name="notification_vibrate_summary">Enables or disables vibration when notifications are pushed.</string>
+
+    <!-- Button text -->
+    <string name="delete_text">Delete</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="save_text">Save</string>
+    <string name="other_location_label">Other&#8230;</string>
+    <string name="hello">Hello World, FallDetectionActivity!</string>
+    <string name="app_name">FallDetection</string>
+
+    <!-- BlueTooth receiver -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+
+    <!--
+    These ADL's come from Monitor of human movements for fall detection and activities
+    recognition in elderly care using wireless sensor networks: a survey, Abbate et al.
+    -->
+
+    <string-array name="ADL_array">
+        <item>Front-lying-FALL</item>
+        <item>Front-protecting-lying-FALL</item>
+        <item>Front-knees-FALL</item>
+        <item>Front-right-FALL</item>
+        <item>Front-left-FALL</item>
+        <item>Front-quick-recovery-FALL</item>
+        <item>Front-slow-recovery-FALL</item>
+        <item>Back-sitting-FALL</item>
+        <item>Back-lying-FALL</item>
+        <item>Back-right-FALL</item>
+        <item>Back-left-FALL</item>
+        <item>Right-sideway-FALL</item>
+        <item>Right-recovery-FALL</item>
+        <item>Left-sideway-FALL</item>
+        <item>Left-recovery-FALL</item>
+        <item>Syncope-FALL</item>
+        <item>Syncope-wall-FALL</item>
+        <item>Podium-FALL</item>
+        <item>Rolling-out-bed-FALL</item>
+        <item>Lying-bed</item>
+        <item>Rising-bed</item>
+        <item>Sit-bed</item>
+        <item>Sit-chair</item>
+        <item>Sit-sofa</item>
+        <item>Sit-air</item>
+        <item>Walking-forward</item>
+        <item>Jogging</item>
+        <item>Walking-backward</item>
+        <item>Bending</item>
+        <item>Bending-pick-up</item>
+        <item>Stumble</item>
+        <item>Limp</item>
+        <item>Squatting-down</item>
+        <item>Trip-over</item>
+        <item>Coughing-sneezing</item>
+    </string-array>
+
+    <string name="running_on_startup">The Power Profiler will now run after your phone starts up.</string>
+    <string name="not_running_on_startup">The Power Profiler will no longer run on when your phone starts up.</string>
+    <string name="stop_sending_text">This application sends data on power utilization and running applications to the PowerTutor team. We gather nothing allowing us to associate the data with you or your phone; a cryptographically secure hash function is used to protect your identity.  Pressing \'Stop\' will prevent these data from being sent.</string>
+    <string name="start_sending_text">This application sends data on power utilization and running applications to the PowerTutor team. We gather nothing allowing us to associate the data with you or your phone; a cryptographically secure hash function is used to protect your identity.  Pressing \'Start\' will start sending the data from now on.</string>
+    <string name="unknown_phone">Your phone type is not recognized by PowerTutor. You may continue to use PowerTutor however we may not be able to get all of the data for your phone and the power calculations may not be accurate.</string>
+    <string name="term"><p>In this version of PowerTutor the Power Profiler service is run on
+startup and power consumption traces are sent back to the PowerTutor team.  This
+helps us identify common power consumption problems for real applications.  The
+information will be used to improve PowerTutor and recommend power efficiency
+improvements to other software, with the end goal of increasing your phone\'s
+battery life.\n</p>\n<p>We gather\n
+	- CPU use\n
+	- Amount of WiFi/3G traffic (not its content)\n
+	- Screen brightness\n
+	- GPS activity (but not location)\n
+  - Audio use (on/off, volume)\n
+	- Total power consumption\n
+	- Application resource utilization\n
+	- Phone mode, e.g., airplane mode or call status\n</p><p>\nWe do <b>NOT</b> gather any of your personal data used in applications
+or phone call logs. None of these data will be associate with you or your phone.
+We use a cryptographically secure hash function to protect your identity.\n</p>\n<p>PowerTutor will send back traces only when the phone is plugged in and
+will prefer to use Wifi to send back the traces, although your carrier\'s data
+service will be used if Wifi is rarely available.  If you would like to disable
+sending traces you can do so in the menu or by turning off background data in
+the android options.</p></string>
+    <string name="help_head"><big><b>PowerTutor</b></big> - A real-time system and application power monitor.</string>
+    <string name="help_text">\n<ul><li><b>Main control panel</b>\n
+     - Start/stop profiling services. \n
+     - Select <b>Application</b> or <b>System</b> mode to check out power consumption statistics.\n
+     - Menu features:\n
+        \t* Start/stop sending power traces to the PowerTutor team.\n
+        \t* Enable/Disable the profiling service to run on startup.\n
+        \t* Save the current power trace to the sdcard.\n</li>\n<li><b>App View</b>\n
+     - Displays power usage information for all of the apps running on the
+           phone.\n
+     - Press an app row to go to the <i>Graph View</i> for that app\'s power
+           usage.\n
+     - Press a hardware component name in the top tabs to include/exclude it from power
+            calculations.\n
+     - Data interpretation:\n
+        \t* Percentage value: The percentage of energy/average power consumed by the 
+            app in system.\n
+        \t* Time value: Time that the app has been actively monitored by PowerTutor.\n
+     - Menu features:\n
+        \t* Change the sort key to one of current power, average power, or total energy usage.\n
+        \t* Change the time span to include the last minute, hour, day, or all time.\n</li>\n<li><b>Graph View</b>\n
+     - Displays app/system power consumption decomposed by hardware component.\n
+     - Use the tabs at the top to move between <i>Chart View</i> and <i>Pie
+       View</i>.\n</li>\n<li><b>Chart View</b>\n
+     - Displays the power usage of different components on the phone in recent
+           history.\n
+     - Scroll to view different component power graphs.\n
+     - Menu features:\n
+        \t* Select \"<i>Set History Size</i>\" to adjust the number of data points
+           displayed.\n
+        \t* Select \"<i>Magnify Recent Data</i>\" to show more recent data points
+           more spread out.\n
+        \t* Select \"<i>Pause</i>\" to freeze the display as is, select resume to
+           continue.\n</li>\n<li><b>Pie View</b>\n
+     - Displays the power usage percentages of the different components.\n
+     - Menu features:\n
+        \t* Change the time span to include the last minute, hour, day, or all time.\n</li>\n</ul></string>
+    <string name="url_1">For detailed information, please go to: </string>
+    <string name="url_2"><a href="http://powertutor.org">http://powertutor.org</a>.\n</string>
+    <string name="title_activity_register_mfa">RegisterMFAActivity</string>
+
+</resources>
