@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6B2FC385-4BFB-47F2-B745-C215CDB983B7}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8;C:/Program Files/PCL 1.6.0/include/pcl-1.6;C:/Program Files/PCL 1.6.0/3rdParty/Eigen/include;C:/Program Files/PCL 1.6.0/3rdParty/Boost/include;C:/Program Files/OpenNI/Include;C:/Program Files/PCL 1.6.0/3rdParty/FLANN/include;C:/Program Files/PCL 1.6.0/3rdParty/Qhull/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8;C:/Program Files/PCL 1.6.0/include/pcl-1.6;C:/Program Files/PCL 1.6.0/3rdParty/Eigen/include;C:/Program Files/PCL 1.6.0/3rdParty/Boost/include;C:/Program Files/OpenNI/Include;C:/Program Files/PCL 1.6.0/3rdParty/FLANN/include;C:/Program Files/PCL 1.6.0/3rdParty/Qhull/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8;C:/Program Files/PCL 1.6.0/include/pcl-1.6;C:/Program Files/PCL 1.6.0/3rdParty/Eigen/include;C:/Program Files/PCL 1.6.0/3rdParty/Boost/include;C:/Program Files/OpenNI/Include;C:/Program Files/PCL 1.6.0/3rdParty/FLANN/include;C:/Program Files/PCL 1.6.0/3rdParty/Qhull/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Program Files/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8;C:/Program Files/PCL 1.6.0/include/pcl-1.6;C:/Program Files/PCL 1.6.0/3rdParty/Eigen/include;C:/Program Files/PCL 1.6.0/3rdParty/Boost/include;C:/Program Files/OpenNI/Include;C:/Program Files/PCL 1.6.0/3rdParty/FLANN/include;C:/Program Files/PCL 1.6.0/3rdParty/Qhull/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/Users/Kinect/Desktop/Kinect_Final -BC:/Users/Kinect/Desktop/Kinect_Final/Debug --check-stamp-file C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/Users/Kinect/Desktop/Kinect_Final -BC:/Users/Kinect/Desktop/Kinect_Final/Debug --check-stamp-file C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/Users/Kinect/Desktop/Kinect_Final -BC:/Users/Kinect/Desktop/Kinect_Final/Debug --check-stamp-file C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/Users/Kinect/Desktop/Kinect_Final -BC:/Users/Kinect/Desktop/Kinect_Final/Debug --check-stamp-file C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/CMakeLists.txt;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\CMake 2.8\share\cmake-2.8\Modules\FindVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Users\Kinect\Desktop\Kinect_Final\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\faac959f4f776fd4995e86f8b6451b5e\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/faac959f4f776fd4995e86f8b6451b5e/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/faac959f4f776fd4995e86f8b6451b5e/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/faac959f4f776fd4995e86f8b6451b5e/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/faac959f4f776fd4995e86f8b6451b5e/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Kinect\Desktop\Kinect_Final\Debug\CMakeFiles\ALL_BUILD</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Kinect/Desktop/Kinect_Final/Debug/ZERO_CHECK.vcxproj">
+      <Project>8FC8FF06-9F01-4DFE-A518-9CE306C889AC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Kinect/Desktop/Kinect_Final/Debug/openni_grabber.vcxproj">
+      <Project>1BE24B13-01AC-47B4-908F-2BCE37E006AF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

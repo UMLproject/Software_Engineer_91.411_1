@@ -1,0 +1,81 @@
+Smart Watch bugs
+
+
+
+New Bugs:
+
+-Fix Bluetooth connection issues
+-When Videos are sent they are bigger then when they were on the watch
+
+-Bug with gibberish title is back
+(Solution?) Check file size sent and the size retrieved, First gibberish file is the same as buffersize
+			Video contains
+			Issue was caused when two threads were opened to send the same data back and forth
+
+-Potential bug with uploading after set time. received file unreadable
+
+-Peng app crash
+
+
+
+
+Bugs:
+
+-Fall Detection occasionally crashes and can ruin bluetooth data transmission
+(Solved) If Pipe breaks save files for reupload
+
+-Scrambled files when calling upload data before a previous upload data ends
+-Bad data when sending data to quickly(Before Bluetooth data finishes sending)
+(Solved) Don't allow user to use app till upload finished
+
+-Fall Detection app doesn't restart service when bluetooth turns on then off
+(Solved) bring bluetooth Broadcast receiver into DownloadService and out of fall detection
+
+
+
+
+Bugs:
+
+-Lag start (occurs on install)
+	(When the lag start occurs everything appears as if it were running the whole time) (Rare)
+
+-Last two files either not sent or sent over corrupted
+(Solved) Sensor file might've kept growing after file size was determined making false size and
+			causing errors when send and reading. Now stopped the sensors a bit earlier, didn't work
+			Closed file right after turning off the sensor's, didn't work
+			Same issue as above with scrambled data
+
+-Sometimes on reinstall or random crash on watch app when connected, broken pipe occurs.
+(Solved) Restart bluetooth service on Peng's app to clear the pipes, will probably fix it
+
+-Bluetooth frequently doesn't connect until restart, could be issue with watch side
+-receiver bluetooth thinks it's connected but watch isn't actually connected
+(When connection is lost and retried it breaks, this is the main issue)
+(Solved) Believe that when I stopped connecting phone to watch and watch to phone only it works, didn't work
+			Ruining an already connected device by trying to reconnect could mess everything up, didn't work
+			attempted to reconnect in a different manner after the first connect failed, test more
+
+-Sensor data stops collecting after about 20 min (1 mb).
+(Solved) Changed to foreground
+
+-Occasional really slow start-up
+(Captured the log for this occurence, usually happens on install)
+(Solved) Put camera start-up and progress bar in background threads, test more
+
+-Receiving app crashes when connecting again after disconnecting
+(Solved)The file creation was messed up after storing first meal data
+	
+-Bluetooth sometimes loses connection when watch sleeps
+(Solved) New service doesn't let connection die when sleeping
+
+-If file size is 0 when sending data, app crashes
+(Solved)Checked file for size before sending, deleted if 0. (Shouldn't ever occur)
+
+-If app is started while screen is off stuck in preview mode
+(Solved) Made the screen clickable incase faulty start so user can start if need be
+
+-If app asks to turn bluetooth on it is stuck in preview mode
+(Solved) Made the screen clickable incase faulty start so user can start if need be
+
+-Service wasn't started after bluetooth request
+(Solved) Didn't start activity for result and call enable, was calling discoverable

@@ -1,0 +1,58 @@
+Smart Watch Application
+
+Name: Food Journal
+
+
+
+
+Requirements:
+
+-Have Peng's app download my app using Samsung features
+-Have service always running to allow for anytime connection
+-Make a new super class list:
+	Super class of CameraSurfaceActivity
+	Two child classes of RecorderCameraActivity and PlaybackCameraActivity
+	Two children of RecorderCameraActivity that are VideoCameraActivity and PictureCameraActivity
+-add a timer to the uploading notification
+-try to zip the data
+-Timer for frequency of app usage.
+	If user reuses app within 1-2 min. of closing it, delete old data and create new ones
+	(used as a way to determine if the user wanted to redo their video, may not be feasible)
+-OpenCV image Processing
+-Implement Picture capturing
+
+
+
+
+Performance/Memory Issues:
+
+-Timer bar could be using a lot of resources, creates many objects to record the time
+(Solution) I cut down on number of threads and objects created
+
+-Start-up is slow causing a sudden burst of actions (bad for usability, on install only)
+(Solution?)Perhaps a loading screen since it is hard to control camera start up time
+			Could also take out the fragment layout to make sure the onCreate
+			isn't doing too much work when setting up for camera
+
+-Videos are large
+(Solution?)if size is truly an issue, use third party tech to compress videos
+
+-Sensor data file is about 730 bytes per second (MAX about 2.5 mb an hour)
+(Solution) Throttled the amount of sensor data being recorded
+
+
+
+
+WARNING: Timers are bad practice for android as they use uup extra resources(Threads)
+Try to use a handler instead
+
+WARNING: java.lang.Thread is not a background thread by default, it will
+run on the main thread. Could be causing sluggish points in the app
+
+WARNING: Nesting to many layout types (ie linearlayout, relativelayout)
+will cause for slow app start and activity change. If activity startup gets to
+slow check if fragments are necessary and if not eliminate them
+
+WARNING: If handler is used incorrectly memory leaks will occur.
+leaks will occur when an accidental handler loop is made. To combat this,
+make a weak reference to the handler or make it static

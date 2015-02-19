@@ -1,0 +1,11 @@
+To run the code you need a server computer with java installed. After java is installed on the server computer you need to copy the BluetoothServer folder into the machine and go into the BluetoothServer/bin folder and run the mazin program like this:
+
+java ProjectMain.class
+
+that will bring up the server program.
+
+Now for the client side you need an intel edison with an I2C shield and connect it properly to ann ADXL345 sensor, after it is connected you need to install the i2c-tools package, python3, and copy the Bluetooth client folder into it. After that you need to go into the /BluetoothClient/myproject/adxl/quick2wire=python-api folder zand run the program like this:
+
+python3 test.py
+
+You need to modify test.p to use the mazc azdress of your server.

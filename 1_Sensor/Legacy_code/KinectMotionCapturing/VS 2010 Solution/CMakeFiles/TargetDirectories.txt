@@ -1,0 +1,3 @@
+C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Kinect/Desktop/Kinect_Final/Debug/CMakeFiles/openni_grabber.dir

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Food Journal</string>
+    <string name="title_activity_video_camera">VideoCamera</string>
+    <string name="title_activity_camera_surface">CameraSurfaceActivity</string>
+    <string name="crosshair_description">crosshair</string>
+    <string name="dot_description">dot</string>
+    <string name="nothing"></string>
+
+</resources>

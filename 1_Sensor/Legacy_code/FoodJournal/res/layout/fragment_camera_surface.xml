@@ -1,0 +1,59 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flCameraLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="research.JNJABA.daylong.smartwatchapp.CameraSurface$PlaceholderFragment" >
+    
+    <SurfaceView
+        android:id="@+id/svVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </SurfaceView>
+
+    <RelativeLayout
+        android:id="@+id/rlCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="right" >
+
+        <ImageView
+            android:id="@+id/ivDot"
+            android:contentDescription="@string/dot_description"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/red_dot" />
+
+        <ImageView
+            android:id="@+id/ivCrosshair"
+            android:contentDescription="@string/crosshair_description"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/crosshair_transparent" />
+
+        <ProgressBar
+            android:id="@+id/pbTimer"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/tvVideoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pbTimer"
+            android:text="@string/nothing" />
+
+    </RelativeLayout>
+    
+</merge>
