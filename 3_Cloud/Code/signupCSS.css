@@ -1,0 +1,22 @@
+/*signin/signup forms*/
+#leftForm{
+    float: left;
+    width: 49%;
+    border-right: 1px solid #000;
+    height: 21em;
+}
+            
+#rightForm{
+    float: right;
+    width: 50%;
+    height: 21em;
+}
+
+/*Input Styling for signup/signin*/
+.inputField{
+    margin: 0px auto;
+    width: 25.5em;
+    margin-top: 1em;
+    height: 2em;
+}
+
