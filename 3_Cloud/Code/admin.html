@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="admin.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="admin.css">
+		<title>Admin Landing</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="header">
+				<h1>Welcome Admin!</h1>
+			</div>
+			<div class="content">
+				<div id="edit" class="default">
+					<div class="formhead">
+						<h3>Edit</h3>
+					</div>
+					<form>
+					<input type="radio" name="edit" value="users">Users
+					<br>
+					<input type="radio" name="edit" value="goals">Goals
+					<br>
+					<input type="radio" name="edit" values="settings">Settings
+					</form>
+				</div>
+
+				<div id="userControl" class="default">
+					<div class="formhead">
+						<h3>Edit Users</h3>
+					</div>
+					<form id="usercontrolform">
+					<script>
+						displayData();
+					</script>
+					<!--<script>
+						var xmlDoc=loadXMLDoc("https://drive.google.com/file/d/0B2uo7qRA0dwQRHdJUEhqMTVTLVU/view");
+						document.write("This is after xml load of " + xmlDoc);
+						writefromxml(xmlDoc);
+					</script>-->
+					<!--<div class="form-group">
+						<label>John Doe</label>
+						<button type="button" onclick="setgoals('John Doe')">Set Goals</button>
+						<button type="button" onclick="editprofile('John Doe')">Edit Profile</button>
+						<button type="button" onclick="deleteuser('John Doe')">Delete</button><br>
+					</div>
+
+					<div class="form-group">
+						<label>Jane Doe</label>
+						<button type="button" onclick="setgoals('Jane Doe')">Set Goals</button>
+						<button type="button" onclick="editprofile('Jane Doe')">Edit Profile</button>
+						<button type="button" onclick="deleteuser('Jane Doe')">Delete</button><br>
+					</div>
+
+					<div class="form-group">
+						<label>Bill Smith</label>
+						<button type="button" onclick="setgoals('Bill Smith')">Set Goals</button>
+						<button type="button" onclick="editprofile('Bill Smith')">Edit Profile</button>
+						<button type="button" onclick="deleteuser('Bill Smith')">Delete</button><br>
+					</div>
+
+					<div class="form-group">
+						<label>Alan Clark</label>
+						<button type="button" onclick="setgoals('Alan Clark')">Set Goals</button>
+						<button type="button" onclick="editprofile('Alan Clark')">Edit Profile</button>
+						<button type="button" onclick="deleteuser('Alan Clark')">Delete</button><br>
+					</div>
+
+					<div class="form-group">
+						<label>Joan Peters</label>
+						<button type="button" onclick="setgoals('Joan Peters')">Set Goals</button>
+						<button type="button" onclick="editprofile('Joan Peters')">Edit Profile</button>
+						<button type="button" onclick="deleteuser('Joan Peters')">Delete</button><br>
+					</div>-->
+					</form>
+				</div>
+
+				<div id="events" class="default">
+					<div class="formhead">
+						<h3>Event Log</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
