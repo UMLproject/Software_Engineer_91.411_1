@@ -1,0 +1,69 @@
+{
+    "Profiles": [
+        {
+            "user": {
+                "uID": 1,
+                "u_name": "John Doe",
+                "u_age": 33,
+                "u_height_feet": 5,
+                "u_hright_inch": 11,
+                "u_wieght_lb": 173,
+                "u_dob": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 1970
+                },
+                "u_profile_picture": "???",
+                "u_activities": {
+                    "u_daily_steps": 3127,
+                    "u_daily_flights": 0,
+                    "u_completed_goals": 4
+                },
+                "u_graphs": {
+                    "u_goals_g": "???",
+                    "u_steps_g": "???",
+                    "u_flights_g": "???",
+                },
+                "u_notifcations": {
+                    "u_current": "Personal Goal: 'Run 5 miles' is due soon.",
+                    "u_upcoming": "You have 3 upcoming goals"
+                },
+                "u_goals": {
+                    "u_g1": "Progress meeting with fitness instructor",
+                    "u_g2": "Complete daily stretches",
+                    "u_g3": "Complete daily workout"
+                }
+            },
+            "admin": {
+                "users": {
+                    "u1": "John Doe",
+                    "u2": "Jane Doe",
+                    "u3": "Bill Smith",
+                    "u4": "Alan Clark",
+                    "u5": "Joan Peters",
+                    "u6": "Alfred Stone",
+                    "u7": "Jack McPhee",
+                    "u8": "Chris Charles",
+                    "u9": "Keith Wu"
+                },
+                "global_goals": {
+                    "fitness": {
+                        "f_g1": "Progress meeting with fitness instructor",
+                        "f_g2": "Complete daily stretches",
+                        "f_g3": "Complete daily workout"
+                    },
+                    "rehab": {
+                        "r_g1": "Progress meeting with physical therapist",
+                        "r_g2": "Complete daily physical therapy"
+                    }
+                },
+                "event_log": {
+                    "l1": "Alfred Stone completed daily step goal",
+                    "l2": "Today is Jane Doe's birthday",
+                    "l3": "Bill Smith did not complete daily flight goal",
+                    "l4": "Jack McPhee completed personal goal: 'Run 3 miles'"
+                }
+            }
+        }
+    ]
+}

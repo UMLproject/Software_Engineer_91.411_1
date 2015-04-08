@@ -1,0 +1,20 @@
+/* 
+    Document   : tabs
+    Created on : Apr 5, 2015, 1:46:40 PM
+    Author     : Chris
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#chart1div {
+    width : 50%;
+    height : 500px;
+}
+#chart2div {
+    width : 50%;
+    height : 500px;
+}
+#chart3div {
+    width : 50%;
+    height : 500px;
+}

@@ -1,0 +1,218 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/amcharts.js"></script>
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/pie.js"></script>
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/serial.js"></script>
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/themes/light.js"></script>
+
+        <script type="text/javascript">
+            var chart1 = AmCharts.makeChart("chart1div",
+                    {
+                        "type": "pie",
+                        "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+                        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                        "innerRadius": "40%",
+                        "brightnessStep": 255,
+                        "hoverAlpha": 0.64,
+                        "labelTickAlpha": 0.82,
+                        "titleField": "category",
+                        "valueField": "column-1",
+                        "theme": "light",
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "align": "center",
+                            "markerType": "circle"
+                        },
+                        "titles": [],
+                        "dataProvider": [
+                            {
+                                "category": "Finished Goals",
+                                "column-1": "4"
+                            },
+                            {
+                                "category": "Unfinished Goals",
+                                "column-1": "4"
+                            }
+                        ]
+                    }
+            );
+            var chart2 = AmCharts.makeChart("chart2div",
+                    {
+                        "type": "serial",
+                        "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+                        "categoryField": "date",
+                        "dataDateFormat": "YYYY-MM-DD HH",
+                        "categoryAxis": {
+                            "minPeriod": "hh",
+                            "parseDates": true
+                        },
+                        "chartCursor": {
+                            "categoryBalloonDateFormat": "JJ:NN"
+                        },
+                        "chartScrollbar": {},
+                        "trendLines": [],
+                        "graphs": [
+                            {
+                                "bullet": "round",
+                                "id": "AmGraph-2",
+                                "title": "John Doe",
+                                "valueField": "column-1"
+                            }
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Steps Taken"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Daily Steps"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "column-1": "128",
+                                "date": "2014-03-01 08"
+                            },
+                            {
+                                "column-1": "523",
+                                "date": "2014-03-01 09"
+                            },
+                            {
+                                "column-1": "1136",
+                                "date": "2014-03-01 10"
+                            },
+                            {
+                                "column-1": "1325",
+                                "date": "2014-03-01 11"
+                            },
+                            {
+                                "column-1": "1458",
+                                "date": "2014-03-01 12"
+                            },
+                            {
+                                "column-1": "1847",
+                                "date": "2014-03-01 13"
+                            },
+                            {
+                                "column-1": "2271",
+                                "date": "2014-03-01 14"
+                            },
+                            {
+                                "column-1": "2403",
+                                "date": "2014-03-01 15"
+                            },
+                            {
+                                "column-1": "2965",
+                                "date": "2014-03-01 16"
+                            },
+                            {
+                                "column-1": "3127",
+                                "date": "2014-03-01 17"
+                            }
+                        ]
+                    }
+            );
+            var chart3 = AmCharts.makeChart("chart3div",
+                    {
+                        "type": "serial",
+                        "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+                        "categoryField": "category",
+                        "colors": [
+                            "#ae85c9",
+                            "#aab9f7",
+                            "#b6d2ff",
+                            "#c9e6f2",
+                            "#c9f0e1",
+                            "#e8d685",
+                            "#e0ad63",
+                            "#d48652",
+                            "#d27362",
+                            "#495fba",
+                            "#7a629b",
+                            "#8881cc"
+                        ],
+                        "startDuration": 1,
+                        "theme": "light",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [
+                            {
+                                "balloonText": "[[title]] of [[category]]:[[value]]",
+                                "fillAlphas": 1,
+                                "id": "AmGraph-3",
+                                "title": "Flights Finished",
+                                "type": "column",
+                                "valueField": "column-1"
+                            },
+                            {
+                                "balloonText": "[[title]] of [[category]]:[[value]]",
+                                "fillAlphas": 1,
+                                "id": "AmGraph-2",
+                                "title": "Flights Unfinished",
+                                "type": "column",
+                                "valueField": "column-2"
+                            }
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "stackType": "regular",
+                                "title": "Flights"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Daily Flights"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "category": "Flight Progress",
+                                "column-1": "1",
+                                "column-2": "9"
+                            }
+                        ]
+                    }
+            );
+
+        </script>
+    </head>
+    <body>
+        <div id="chart1div" style="width: 640px; height: 400px; background-color: #FFFFFF;" ></div>
+        <div id="chart2div" style="width: 640px; height: 400px; background-color: #FFFFFF;" ></div>
+        <div id="chart3div" style="width: 640px; height: 400px; background-color: #FFFFFF;" ></div>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/">Goals</a><br>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/steps.html">Steps</a><br>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/flights.html">Flights</a><br>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/tabs.html">Tabs(WIP)</a>
+
+    </body>
+</html>

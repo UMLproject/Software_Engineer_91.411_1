@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Flights</title>
+        <meta name="description" content="chart created using amCharts live editor" />
+
+        <!-- amCharts javascript sources -->
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/amcharts.js"></script>
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/serial.js"></script>
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/themes/light.js"></script>
+
+        <!-- amCharts javascript code -->
+        <script type="text/javascript">
+            AmCharts.makeChart("chart3div",
+                    {
+                        "type": "serial",
+                        "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+                        "categoryField": "category",
+                        "colors": [
+                            "#ae85c9", 
+                            "#aab9f7", 
+                            "#b6d2ff", 
+                            "#c9e6f2", 
+                            "#c9f0e1", 
+                            "#e8d685", 
+                            "#e0ad63", 
+                            "#d48652", 
+                            "#d27362", 
+                            "#495fba", 
+                            "#7a629b", 
+                            "#8881cc"
+                        ],
+                        "startDuration": 1,
+                        "theme": "light",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [
+                            {
+                                "balloonText": "[[title]] of [[category]]:[[value]]",
+                                "fillAlphas": 1,
+                                "id": "AmGraph-1",
+                                "title": "Flights Finished",
+                                "type": "column",
+                                "valueField": "column-1"
+                            },
+                            {
+                                "balloonText": "[[title]] of [[category]]:[[value]]",
+                                "fillAlphas": 1,
+                                "id": "AmGraph-2",
+                                "title": "Flights Unfinished",
+                                "type": "column",
+                                "valueField": "column-2"
+                            }
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "stackType": "regular",
+                                "title": "Flights"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Daily Flights"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "category": "Flight Progress",
+                                "column-1": "1",
+                                "column-2": "9"
+                            }
+                        ]
+                    }
+            );
+        </script>
+    </head>
+    <body>
+        <div id="chart3div" style="width: 640px; height: 400px; background-color: #FFFFFF;" ></div>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/">Goals</a><br>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/steps.html">Steps</a><br>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/multi.html">Multi</a><br>
+	<a href="http://www.cs.uml.edu/~cburbine/SE/tabs.html">Tabs(WIP)</a>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chart created with amCharts | amCharts</title>
+        <meta name="description" content="chart created using amCharts live editor" />
+
+        <!-- amCharts javascript sources -->
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/amcharts.js"></script>
+        <script type="text/javascript" src="http://cdn.amcharts.com/lib/3/serial.js"></script>
+
+        <!-- amCharts javascript code -->
+        <script type="text/javascript">
+            AmCharts.makeChart("chartdiv",
+                    {
+                        "type": "serial",
+                        "pathToImages": "https://cdn.amcharts.com/lib/3/images/",
+                        "categoryField": "date",
+                        "dataDateFormat": "YYYY-MM-DD",
+                        "categoryAxis": {
+                            "parseDates": true
+                        },
+                        "chartCursor": {},
+                        "chartScrollbar": {},
+                        "trendLines": [],
+                        "graphs": [
+                            {
+                                "bullet": "round",
+                                "id": "AmGraph-1",
+                                "lineColor": "#FF0000",
+                                "title": "Ideal Burndown",
+                                "valueField": "column-1"
+                            },
+                            {
+                                "bullet": "square",
+                                "id": "AmGraph-2",
+                                "lineColor": "#0000FF",
+                                "title": "Remaining Effort ",
+                                "valueField": "column-2"
+                            }
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Effort Remaining (Hours)"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Burndown Chart"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "date": "2014-04-02",
+                                "column-1": "60",
+                                "column-2": "60"
+                            },
+                            {
+                                "date": "2014-04-03",
+                                "column-1": "42",
+                                "column-2": "50"
+                            },
+                            {
+                                "date": "2014-04-04",
+                                "column-1": "42",
+                                "column-2": "40"
+                            },
+                            {
+                                "date": "2014-04-05",
+                                "column-1": "26",
+                                "column-2": "30"
+                            },
+                            {
+                                "date": "2014-04-06",
+                                "column-1": "18",
+                                "column-2": "20"
+                            },
+                            {
+                                "date": "2014-04-07",
+                                "column-1": "13",
+                                "column-2": "10"
+                            },
+                            {
+                                "date": "2014-04-08",
+                                "column-1": "0",
+                                "column-2": "0"
+                            }
+                        ]
+                    }
+            );
+        </script>
+    </head>
+    <body>
+        <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+    </body>
+</html>
