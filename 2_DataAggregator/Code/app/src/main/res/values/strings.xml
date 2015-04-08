@@ -1,6 +1,47 @@
 <resources>
     <string name="app_name">DataAggregator</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Main/User Information Activity-->
+    <string name="get_started">To get started, tell us a little bit about yourself.</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="feet">Feet</string>
+    <string name="inches">inches</string>
+    <string name="abvFeet">ft.</string>
+    <string name="abvInches">in.</string>
+    <string name="done">Done</string>
+
+    <string-array name="feet">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="inches">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
 </resources>
