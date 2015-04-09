@@ -1,0 +1,31 @@
+/*signin/signup forms*/
+#leftForm h1, #rightForm h1 {
+    font-size: 170%;
+    text-align: center;
+}
+
+#leftForm{
+    /*float: left;*/
+    /*width: 49%;*/
+    /*border-right: 1px solid #000;*/
+    /*height: 21em;*/
+    padding-bottom: 4em;
+}
+
+#rightForm{
+    /*float: right;*/
+    /*width: 50%;*/
+    /*height: 21em;*/
+}
+
+/*Input Styling for signup/signin*/
+.inputField{
+    margin: 0px auto;
+    width: 80%;
+    margin-top: 1em;
+    height: 2em;
+}
+
+.signupHolder {
+    min-height: 380px;
+}

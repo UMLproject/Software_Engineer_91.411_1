@@ -1,0 +1,63 @@
+/*admin splash page*/
+h1 {
+	text-align:center;
+}
+
+#header{
+	/*height:5em;*/
+	/*text-align: center;*/
+	width: 100%;
+	/*border-bottom:3px solid #000;*/
+	/*margin-bottom:10px;
+	margin-left:10px;*/
+}
+#edit{
+	/*float:left;*/
+	/*width:20%;*/
+	/*border:1px solid #000;*/
+	margin-right:10px;
+	margin-left:10px;
+}
+
+#userControl{
+	/*border:1px solid #000;*/
+	/*width:45%;*/
+	/*float:left;*/
+}
+#events{
+	/*border:1px solid #000;*/
+	/*width:25%;*/
+	/*float:left;*/
+	margin-left:10px;
+}
+.default{
+	padding:5px;
+	/*overflow:scroll;*/
+	/*height:40em;*/
+}
+.formhead{
+	border-bottom:1px solid #000;
+	margin-bottom: 5px;
+}
+label{
+	/*width:7em;*/
+}
+
+label.editLabel {
+	font-weight: normal;
+}
+
+button.adminBtn {
+	/*margin-left:10px;
+	margin-right:10px;*/
+	width: 90%;
+	height: 3em;
+}
+
+.userRow {
+	text-align: center;
+}
+
+.welcomeText {
+	text-align: center;
+}

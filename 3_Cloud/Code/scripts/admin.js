@@ -14,19 +14,30 @@ function displayData()
 	for (i=0;i<len;i++)
 	{
 		var name = obj.USERS[i].firstName + " " + obj.USERS[i].lastName;
-		var labs = "<div class=\"form-group\"><label>" + name + "</label>"
+		var labs = "<div class=\"form-group row userRow\"><label class=\"col-md-3\">" + name + "</label>"
 		var buttons = createButtons(name);
 		var content = document.getElementById("usercontrolform").innerHTML;
 		content = content + labs + buttons;
 		document.getElementById("usercontrolform").innerHTML = content;
-	}	
+	}
 }
 
 function createButtons(name)
 {
-	var set = "<button type=\"button\" onclick=\"setGoals('" + name + "')\">Set Goals</button>";
-	var edit = "<button type=\"button\" onclick=\"editProfile('" + name + "')\">Edit Profile</button>";
-	var del = "<button type=\"button\" onclick=\"deleteUser('" + name + "')\">Delete</button>";
+	var set = "";
+	set += "<div class=\"col-md-3\">";
+	set += "<button class=\"adminBtn\" type=\"button\" onclick=\"setGoals('" + name + "')\">Set Goals</button>";
+	set += "</div>"
+
+	var edit = "";
+	edit += "<div class=\"col-md-3\">";
+	edit += "<button class=\"adminBtn\"type=\"button\" onclick=\"editProfile('" + name + "')\">Edit Profile</button>";
+	edit += "</div>";
+
+	var del = "";
+	del += "<div class=\"col-md-3\">";
+	del += "<button class=\"adminBtn\"type=\"button\" onclick=\"deleteUser('" + name + "')\">Delete</button>";
+	del += "</div>";
 
 	var ret = set + edit + del + "<br>";
 	return ret;

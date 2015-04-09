@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/*
+   Software Engineering I - Group I - Cloud Prototype
+   File: css/stylesheet.css
+   Author: Alex Glasser
+*/
+
+body {
+    padding-top: 20px;
+}
+
+.container {
+    /*display: flex;*/
+}
+
+.jumbotron h1 {
+    font-size: 170%;
+    text-align: center;
+}
+
+.jumbotron h2 {
+    font-size: 120%;
+    text-align: center;
+}
+
+ul.profilelist {
+    list-style: none;
+    margin-left: 0em;
+}
+
+.profilebody {
+    float: left;
+}
+
+.profileimage {
+    /*margin-top: -5em;
+    margin-right: 10em;*/
+    height:100px;
+    width:100px;
+    float:right;
+    padding-bottom: 1em;
+    /*padding-right: 3.5em;*/
+    margin-right: 5.5em;
+}
+
+.profileimage img {
+
+}
+
+.li-goal, .ul-goal {
+    list-style: none;
+    margin-left: -1em;
+}
+
+span.italics {
+    font-style: italic;
+    font-color: gray;
+}
+
+.goalname {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.goalnameExtra {
+    float:right;
+    font-weight: normal;
+    /*font-style: italic;*/
+    font-color: gray;
+}
+
+#goallist {
+    margin-left: -3.5em;
+}
+
+.labelprogress {
+    padding-left: 2em;
+    /*font-style: italic;*/
+    font-color: gray;
+    font-size: 90%;
+}
+
+.labelprogressDiv {
+    margin-top: -1em;
+    text-align: center;
+}
+
+.li-goal {
+    margin-bottom: 1.5em;
+}
+
+.goalsBtnContainer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+a.btn {
+    font-size: 14px;
+}
+
+.graphDiv {
+    /*margin-left: -1em;*/
+    padding-left: -2em;
+    /*padding-right: 0;*/
+    text-align: center;
+}
+
+.graphImg {
+    /*display: none;*/
+    margin-top: 1em;
+
+    width: 200px;
+    height: 160px;
+}
+
+.done {
+    color: green;
+}
+
+.hideIcon {
+    float: right;
+}
+
+.hideIcon:hover {
+    cursor: pointer;
+}
+
+.goalsheader {
+    margin-left: 1em; /* fix offset caused by hide button */
+}
+
+#chart2div {
+    width: 90%;
+    height: 500px;
+}
+
+.eq-panel {
+    min-height: 12em;
+}
+
+.eq-jumbo {
+    min-height: 53em;
+}
+
+#profilebody {
+    padding-top: 1em;
+}
+
+/* Fix offset issues with graph dropdown */
+.graphDropdown {
+    display: inline-block;
+}

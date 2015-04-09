@@ -1,86 +1,97 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 	<head>
-		<script type="text/javascript" src="admin.js"></script>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="scripts/admin.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="admin.css">
-		<title>Admin Landing</title>
+		<link href="css/navbar.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<title>Admin Page - Cloud Prototype</title>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div id="header">
-				<h1>Welcome Admin!</h1>
-			</div>
-			<div class="content">
-				<div id="edit" class="default">
-					<div class="formhead">
-						<h3>Edit</h3>
-					</div>
-					<form>
-					<input type="radio" name="edit" value="users">Users
-					<br>
-					<input type="radio" name="edit" value="goals">Goals
-					<br>
-					<input type="radio" name="edit" values="settings">Settings
-					</form>
+		<div class="container wrapper">
+			<!-- Static navbar -->
+	        <nav class="navbar navbar-default navbar-fixed-top">
+	            <div class="container-fluid">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="#">Cloud Prototype</a>
+	                </div>
+	                <div id="navbar" class="navbar-collapse collapse">
+	                    <ul class="nav navbar-nav">
+	                        <li class="active"><a href="#">Home</a></li>
+	                        <li><a href="#">Users</a></li>
+	                        <li><a href="#">Goals</a></li>
+	                    </ul>
+	                    <ul class="nav navbar-nav navbar-right">
+	                        <li class="dropdown">
+	                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+	                            <ul class="dropdown-menu" role="menu">
+	                                <li><a href="#">Manage Administrators</a></li>
+	                                <li class="divider"></li>
+	                                <!-- <li class="dropdown-header">Nav header</li> -->
+	                                <li><a href="#">Sign Out</a></li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </div><!--/.nav-collapse -->
+	            </div><!--/.container-fluid -->
+	        </nav>
+
+			<div class="jumbotron container">
+				<div id="header" class="panel">
+					<h1>Welcome Admin!</h1>
 				</div>
-
-				<div id="userControl" class="default">
-					<div class="formhead">
-						<h3>Edit Users</h3>
-					</div>
-					<form id="usercontrolform">
-					<script>
-						displayData();
-					</script>
-					<!--<script>
-						var xmlDoc=loadXMLDoc("https://drive.google.com/file/d/0B2uo7qRA0dwQRHdJUEhqMTVTLVU/view");
-						document.write("This is after xml load of " + xmlDoc);
-						writefromxml(xmlDoc);
-					</script>-->
-					<!--<div class="form-group">
-						<label>John Doe</label>
-						<button type="button" onclick="setgoals('John Doe')">Set Goals</button>
-						<button type="button" onclick="editprofile('John Doe')">Edit Profile</button>
-						<button type="button" onclick="deleteuser('John Doe')">Delete</button><br>
+				<div class="content">
+					<div id="edit" class="default col-md-2 panel">
+						<div class="formhead">
+							<h2>Edit</h2>
+						</div>
+						<form>
+						<input type="radio" name="edit" value="users" checked="checked">
+						<label class="editLabel">Users</label>
+						<br>
+						<input type="radio" name="edit" value="goals">
+						<label class="editLabel">Goals</label>
+						<br>
+						<input type="radio" name="edit" values="settings">
+						<label class="editLabel">Settings</label>
+						</form>
 					</div>
 
-					<div class="form-group">
-						<label>Jane Doe</label>
-						<button type="button" onclick="setgoals('Jane Doe')">Set Goals</button>
-						<button type="button" onclick="editprofile('Jane Doe')">Edit Profile</button>
-						<button type="button" onclick="deleteuser('Jane Doe')">Delete</button><br>
+					<div id="userControl" class="default col-md-6 panel">
+						<div class="formhead">
+							<h2>Edit Users</h2>
+						</div>
+						<form id="usercontrolform">
+						<script>
+							displayData();
+						</script>
+						</form>
 					</div>
 
-					<div class="form-group">
-						<label>Bill Smith</label>
-						<button type="button" onclick="setgoals('Bill Smith')">Set Goals</button>
-						<button type="button" onclick="editprofile('Bill Smith')">Edit Profile</button>
-						<button type="button" onclick="deleteuser('Bill Smith')">Delete</button><br>
-					</div>
-
-					<div class="form-group">
-						<label>Alan Clark</label>
-						<button type="button" onclick="setgoals('Alan Clark')">Set Goals</button>
-						<button type="button" onclick="editprofile('Alan Clark')">Edit Profile</button>
-						<button type="button" onclick="deleteuser('Alan Clark')">Delete</button><br>
-					</div>
-
-					<div class="form-group">
-						<label>Joan Peters</label>
-						<button type="button" onclick="setgoals('Joan Peters')">Set Goals</button>
-						<button type="button" onclick="editprofile('Joan Peters')">Edit Profile</button>
-						<button type="button" onclick="deleteuser('Joan Peters')">Delete</button><br>
-					</div>-->
-					</form>
-				</div>
-
-				<div id="events" class="default">
-					<div class="formhead">
-						<h3>Event Log</h3>
+					<div id="events" class="default col-md-3 panel">
+						<div class="formhead">
+							<h2>Event Log</h2>
+						</div>
+						<div class="content">
+							<em>There's nothing here...</em>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	</body>
 </html>
