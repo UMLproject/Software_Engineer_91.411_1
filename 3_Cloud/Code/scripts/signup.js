@@ -12,15 +12,15 @@ $(document).ready(function() {
         console.log(authPassword);
 
         if (_ADMINS[authEmail] === authPassword) {
-            window.location.href = "admin.html";
+            window.location.href = "#admin";
             console.log("Auth: admin");
         }
         else if (_USERS[authEmail] === authPassword) {
-            window.location.href = "user.html";
+            window.location.href = "#user";
             console.log("Auth: user");
         }
         else {
-            alert("Unauthorized");
+            alertError("Error", "Incorrect username or password.");
         }
     });
 

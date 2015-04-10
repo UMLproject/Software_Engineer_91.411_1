@@ -151,3 +151,23 @@ a.btn {
 .graphDropdown {
     display: inline-block;
 }
+
+.alert {
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    right: 20px;
+}
+
+#developers {
+    list-style: none;
+}
+
+.aboutPanel {
+    padding: 2em;
+}
+
+#aboutDescription {
+    font-size: 100%;
+}

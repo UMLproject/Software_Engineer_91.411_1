@@ -14,13 +14,17 @@ function displayData()
 	for (i=0;i<len;i++)
 	{
 		var name = obj.USERS[i].firstName + " " + obj.USERS[i].lastName;
-		var labs = "<div class=\"form-group row userRow\"><label class=\"col-md-3\">" + name + "</label>"
+		var labs = "<div id=\"" + name.replace(/\s/g, '') + "\" class=\"form-group row userRow\"><label class=\"username col-md-3\">" + name + "</label>"
 		var buttons = createButtons(name);
 		var content = document.getElementById("usercontrolform").innerHTML;
 		content = content + labs + buttons;
 		document.getElementById("usercontrolform").innerHTML = content;
 	}
 }
+
+$(document).ready(function() {
+	// displayData();
+});
 
 function createButtons(name)
 {
@@ -63,9 +67,16 @@ function deleteUser(user)
 	var del = prompt("To delete the user " + user + ", please type \"DELETE\" in the field below.");
 	if (del != 'DELETE')
 	{
-		alert("User " + user + " was not deleted");
-	} else
+		// alert("User " + user + " was not deleted");
+		alertWarning("Info", "User " + user + " was not deleted");
+	}
+	else
 	{
-		alert("User " + user + " was deleted");
+		var s = '#' + user.replace(/\s/g, '');
+		console.log(s);
+		$(s).remove();
+
+		// alert("User " + user + " was deleted");
+		alertSuccess("Success", "User " + user + " was deleted.");
 	}
 }
