@@ -8,19 +8,22 @@ function hideGoals() {
     $('#hideIcon').toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
 }
 
+function unimplementedFeature() {
+    alertInfo("Unimplemented", "The feature you tried to use is unimplemented.");
+}
+
 $(document).ready(function() {
     // Load the content based on URL hash
     // $('.dropdownMenu1 a').on('click', function(){
     //     $(this).parent().parent().prev().html($(this).html() + '<span class="caret"></span>');
     // });
 
-    $(".dropdownMenu1 li a").click(function(){
-        $(".graphBtn:first-child").html($(this).text());
-        $(".graphBtn:first-child").val($(this).text());
-    });
-
     $(".graphBtn:first-child").html("Steps" + ' <span class="caret"></span>');
     $(".graphBtn:first-child").val("Steps");
+
+    $(".unimplementedFeature").click(function() {
+        unimplementedFeature();
+    });
 
     LoadHash();
 
@@ -114,7 +117,7 @@ function LoadHash() {
     FadeInPageContent();
 
     // Log the URL loaded from for debugging
-    console.log("content/" + h + ".html");
+    // console.log("content/" + h + ".html");
 }
 
 // Offloaded the work of loading the hash content to a function

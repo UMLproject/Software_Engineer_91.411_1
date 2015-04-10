@@ -13,15 +13,15 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">My Goals</a></li>
-                <li><a href="#">My Progress</a></li>
-                <li><a href="#">Add Data...</a></li>
+                <li><a href="javascript:unimplementedFeature();">My Goals</a></li>
+                <li><a href="javascript:unimplementedFeature();">My Progress</a></li>
+                <li><a href="javascript:unimplementedFeature();">Add Data...</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="javascript:unimplementedFeature();">Edit Profile</a></li>
                         <li class="divider"></li>
                         <!-- <li class="dropdown-header">Nav header</li> -->
                         <li><a href="#">Sign Out</a></li>
@@ -83,7 +83,7 @@
                     <ul class="ul-goal">
                         <li class="goalname">
                             <span class="glyphicon glyphicon-edit"></span>
-                            Lose 10 pounds
+                            Climb 10 flights of stairs <span class="goalnameExtra">recurs daily</span>
                         </li>
                         <li>
                             <div class="progress">
@@ -132,18 +132,19 @@
             <div id="graphHeader">
                 <h1 class="profileheader">Progress</h1>
             </div>
-            <div class="dropdown graphDropdown">
+            <div class="btn-group graphDropdown">
                 <button class="graphBtn btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                     View Graph...
                     <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Steps</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Miles</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pushups</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Goals</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
+                <!-- <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">View Graph... <span class="caret"></span></a> -->
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0);">Steps</a></li>
+                    <li><a href="javascript:void(0);">Miles</a></li>
+                    <li><a href="javascript:void(0);">Flights</a></li>
+                    <li><a href="javascript:void(0);">Goals</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">All</a></li>
                 </ul>
             </div>
             <div id="chart2div"> <!-- graphImageDiv -->
