@@ -132,7 +132,7 @@ a.btn {
 
 #chart2div {
     width: 90%;
-    height: 500px;
+    height: 450px;
 }
 
 .eq-panel {
@@ -170,4 +170,8 @@ a.btn {
 
 #aboutDescription {
     font-size: 100%;
+}
+
+.wideJumbotron {
+    padding: 0;
 }

@@ -114,7 +114,7 @@ function LoadHash() {
     $("#placeholder").load(contentpath);
 
     // Fade in the content divs
-    FadeInPageContent();
+    // FadeInPageContent();
 
     // Log the URL loaded from for debugging
     // console.log("content/" + h + ".html");

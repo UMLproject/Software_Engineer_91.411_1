@@ -152,6 +152,35 @@ var graphs = {"Steps":
                 "column-2": "9"
             }
         ]
+    },
+    "Goals": {
+        "type": "pie",
+        "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+        "innerRadius": "40%",
+        "brightnessStep": 255,
+        "hoverAlpha": 0.64,
+        "labelTickAlpha": 0.82,
+        "titleField": "category",
+        "valueField": "column-1",
+        "theme": "light",
+        "allLabels": [],
+        "balloon": {},
+        "legend": {
+            "align": "center",
+            "markerType": "circle"
+        },
+        "titles": [],
+        "dataProvider": [
+            {
+                "category": "Finished Goals",
+                "column-1": "4"
+            },
+            {
+                "category": "Unfinished Goals",
+                "column-1": "4"
+            }
+        ]
     }
 };
 
