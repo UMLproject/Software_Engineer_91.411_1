@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General"
+        android:key="pref_key_general">
+
+        <EditTextPreference
+            android:key="preferences_name"
+            android:title="@string/pref_title_display_name"
+            android:defaultValue="@string/pref_default_display_name"
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+        <EditTextPreference
+            android:key="preferences_weight"
+            android:title="@string/pref_title_user_weight"
+            android:defaultValue="@string/pref_default_user_weight"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Network"
+        android:key="pref_key_network">
+    </PreferenceCategory>
+</PreferenceScreen>

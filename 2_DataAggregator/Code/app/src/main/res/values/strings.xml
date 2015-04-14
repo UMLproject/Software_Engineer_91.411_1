@@ -14,6 +14,7 @@
     <string name="abvFeet">ft.</string>
     <string name="abvInches">in.</string>
     <string name="done">Done</string>
+    <string name="settings_prompt">Change Settings Here</string>
 
     <string-array name="feet">
         <item>2</item>
@@ -43,5 +44,6 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
