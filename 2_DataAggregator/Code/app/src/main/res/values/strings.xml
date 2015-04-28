@@ -43,5 +43,8 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="title_activity_add_asensor">AddASensor</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
