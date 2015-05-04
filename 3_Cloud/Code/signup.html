@@ -26,9 +26,9 @@
                     <div class="formHead">
                         <h1>Sign In</h1>
                     </div>
-                    <form id="formSignin" class="form-signin">
-                        <div class="inputField"><input id="email" required class="form-control" placeholder="Email address" required autofocus type="email" placeholder="Email"></div>
-        				<div class="inputField"><input id="password" required class="form-control" type="password" placeholder="Password"></div>
+                    <form id="formSignin" class="form-signin" action="php/loginWork.php" method="post">
+                        <div class="inputField"><input id="email" name="email" required class="form-control" placeholder="Email address" required autofocus type="email" placeholder="Email"></div>
+        				<div class="inputField"><input id="password" name="password" required class="form-control" type="password" placeholder="Password"></div>
                         <div class="inputField buttonHolder"><button id="signinBtn" class="btn btn-success" type="submit">Submit</button></div>
                     </form>
                 </div><!--Comment to remove the blank space between the divs. This allows for the use of 100% width instead of 99% -->
@@ -36,12 +36,14 @@
                     <div class="formHead">
                         <h1>Sign Up</h3>
                     </div>
-                    <form id="formSignup" class="form-signin">
-                        <div class="inputField"><input required class="form-control" type="text" placeholder="First Name"></div>
-                        <div class="inputField"><input required class="form-control" type="text" placeholder="Last Name"></div>
-                        <div class="inputField"><input required class="form-control" type="email" placeholder="Email"></div>
-                        <div class="inputField"><input required class="form-control" type="password" placeholder="Password"></div>
-                        <div class="inputField"><input required class="form-control" type="password" placeholder="Confirm Password"></div>
+                    <form id="formSignup" class="form-signin" action="php/signUpWork.php" method="post">
+                        <div class="inputField"><input required class="form-control" type="text" name="nameFirst" placeholder="First Name"></div>
+                        <div class="inputField"><input required class="form-control" type="text" name="nameLast" placeholder="Last Name"></div>
+                        <div class="inputField"><input required class="form-control" type="email" name="emailReg" placeholder="Email"></div>
+                        <div class="inputField"><input required class="form-control" type="password" name="passwordSignup" placeholder="Password"></div>
+                        <div class="inputField"><input required class="form-control" type="password" name="passwordConfirm" placeholder="Confirm Password"></div>
+                        <div class="inputField"><input required class="form-control" type="radio" name="accountType" value="User" checked="checked">User</div>
+                        <div class="inputField"><input required class="form-control" type="radio" name="accountType" value="Admin">Admin</div>
                         <div class="inputField buttonHolder"><button id="signupBtn" class="btn btn-success" type="submit">Submit</button></div>
                     </form>
                 </div>
