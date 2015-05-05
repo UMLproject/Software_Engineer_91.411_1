@@ -14,6 +14,7 @@
     <string name="abvFeet">ft.</string>
     <string name="abvInches">in.</string>
     <string name="done">Done</string>
+    <string name="settings_prompt">Change Settings Here</string>
 
     <string-array name="feet">
         <item>2</item>
@@ -43,8 +44,14 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
-    <string name="title_activity_add_asensor">AddASensor</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_asensor">Add A Sensor</string>
+    <string name="add_a_sensor">Add a Sensor</string>
+    <string name="remove_a_sensor">Remove a Sensor</string>
+
+    <string-array name="devices">
+        <item>Joe\'s Moto 360</item>
+        <item>Andy\'s Moto 360</item>
+    </string-array>
 
 </resources>

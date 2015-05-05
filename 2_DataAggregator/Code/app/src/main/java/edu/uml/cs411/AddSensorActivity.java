@@ -6,29 +6,41 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.*;
 
 
-public class MainActivity extends ActionBarActivity {
+public class AddSensorActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        (findViewById(R.id.button)).setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_add_asensor);
+        Button addDeviceButton = (Button) findViewById(R.id.button3);
+        final EditText deviceIDEdit = (EditText) findViewById(R.id.editText2);
+        final EditText deviceNameEdit = (EditText) findViewById(R.id.editText);
+        final RadioGroup typeGroup = (RadioGroup) findViewById(R.id.radioGroup);
+
+        addDeviceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Saved", Toast.LENGTH_SHORT).show();
+
+                RadioButton selected = (RadioButton) findViewById(typeGroup.getCheckedRadioButtonId());
+
+                if ( (selected != null) &&  (!deviceIDEdit.getText().toString().equals("")) && (!deviceNameEdit.getText().toString().equals(""))) {
+                    Toast.makeText(getApplicationContext(), "Device added!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "No device to add!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_add_asensor, menu);
         return true;
     }
 
@@ -42,10 +54,7 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             startActivity(new Intent(this, SettingsActivity.class));
-        } else if (id == R.id.action_add_a_sensor) {
-            startActivity(new Intent(this, AddSensorActivity.class));
-        } else if (id == R.id.action_remove_a_sensor) {
-            startActivity(new Intent(this, RemoveSensorActivity.class));
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

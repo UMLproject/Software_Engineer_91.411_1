@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="edu.uml.cs411.RemoveASensor">
+    tools:context="edu.uml.cs411.RemoveSensorActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -42,7 +42,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner" />
+                android:id="@+id/spinner" android:entries="@array/devices"/>
         </LinearLayout>
 
         <LinearLayout

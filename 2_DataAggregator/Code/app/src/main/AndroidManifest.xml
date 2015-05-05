@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:maxSdkVersion="21"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
@@ -18,8 +17,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddASensor"
-            android:label="@string/title_activity_add_asensor" >
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".AddSensorActivity"
+                android:label="@string/add_a_sensor"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".RemoveSensorActivity"
+                android:label="@string/remove_a_sensor"
+                android:parentActivityName=".MainActivity">
         </activity>
     </application>
 

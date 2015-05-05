@@ -30,6 +30,23 @@
             android:id="@+id/tableLayout"
             android:layout_below="@+id/txtPrompt" android:layout_centerHorizontal="true">
         <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Name"
+                    android:id="@+id/textView" android:layout_column="0"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText3" android:hint="John Smith" android:layout_column="2"
+                    android:gravity="center_horizontal"/>
+        </TableRow>
+        <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/tblrHeight"
                 android:paddingTop="@dimen/abc_control_padding_material" android:layout_marginTop="10dp"
@@ -105,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/gender"
                     android:id="@+id/lblGender"
-                    style="@android:style/TextAppearance.Medium" android:textStyle="italic"/>
+                    style="@android:style/TextAppearance.Medium"/>
             <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -134,7 +151,8 @@
         </TableRow>
     </TableLayout>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done"
-            android:id="@+id/button" android:layout_below="@+id/tableLayout"
-            android:layout_centerHorizontal="true"/>
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"/>
 
 </RelativeLayout>
