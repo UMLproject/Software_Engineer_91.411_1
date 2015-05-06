@@ -54,4 +54,19 @@
         <item>Andy\'s Moto 360</item>
     </string-array>
 
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_signup">Sign Up</string>
+
+    <!-- Strings related to login and sign up -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign Up</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
 </resources>
