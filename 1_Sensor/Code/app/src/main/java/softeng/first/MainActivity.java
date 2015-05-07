@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+    public float[] gravity;
+    public float[] linear_acceleration;
     private TextView mTextView;
 
     private SensorManager mSensorManager;//manages
@@ -60,7 +62,7 @@ public class MainActivity extends Activity {
                 int REQUEST_ENABLE_BT;
                 startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
             }
-        } else { //does not support bluetooth}
+        } else { //does not support bluetooth
         }
     }
 
@@ -75,9 +77,14 @@ public class MainActivity extends Activity {
     }
 
     public void onSensorChanged(SensorEvent event){
-        // now subtract gSensor output from mSensor output?
+        // now subtract gSensor output from mSensor output
+        final float alpha = 0.8;
+          gravity[0] = alpha * gravity[0] + (1 - alpha) * event.values[0];
+          gravity[1] = alpha * gravity[1] + (1 - alpha) * event.values[1];
+          gravity[2] = alpha * gravity[2] + (1 - alpha) * event.values[2];
+
+          linear_acceleration[0] = event.values[0] - gravity[0];
+          linear_acceleration[1] = event.values[1] - gravity[1];
+          linear_acceleration[2] = event.values[2] - gravity[2];
     }
-
-
-
 }
