@@ -27,6 +27,8 @@ public class MainActivity extends Activity {
     private Sensor stepCounter;//for steps
     private TriggerEventListener mTriggerEventListener;//for sig motion
     private Sensor sigMotion;
+    private BluetoothAdapter mBluetoothAdapter;
+    private BluetoothDevice mDevice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +57,7 @@ public class MainActivity extends Activity {
 
         mSensorManager.requestTriggerSensor(mTriggerEventListener, sigMotion);
 
-        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (mBluetoothAdapter != null) {
             if (!mBluetoothAdapter.isEnabled()) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
@@ -70,7 +72,15 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(RESULT_OK == requestCode) {
-            //Yay
+            Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+            // If there are paired devices
+            if (pairedDevices.size() > 0) {
+            // Loop through paired devices (should be only one)
+                for (BluetoothDevice device : pairedDevices) {
+                    // Set the device to be used
+                    mDevice = device;
+                }
+            }
         }else{
             //fail/refused
         }
