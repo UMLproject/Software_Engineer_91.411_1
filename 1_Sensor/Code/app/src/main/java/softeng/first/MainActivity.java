@@ -15,10 +15,12 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+    public UUID MY_UUID = UUID.randomUUID().toString();
     public float[] gravity;
     public float[] linear_acceleration;
     private TextView mTextView;
 
+    private final BluetoothSocket mSocket;
     private SensorManager mSensorManager;//manages
     //private Sensor mSensor;//for accelerometer
     //private Sensor gSensor;//for gravity sensor
@@ -29,6 +31,7 @@ public class MainActivity extends Activity {
     private Sensor sigMotion;
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothDevice mDevice;
+    private final OutputStream mOutStream;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +84,14 @@ public class MainActivity extends Activity {
                     mDevice = device;
                 }
             }
+            mSocket = mDevice.createRfcommSocketToServiceRecord(MY_UUID);
+            try {
+                // Connect the device through the socket. This will block
+                // until it succeeds or throws an exception
+                mmSocket.connect();
+            } catch (IOException connectException) {
+                // Unable to connect; close the socket and get out
+            }
         }else{
             //fail/refused
         }
@@ -96,5 +107,10 @@ public class MainActivity extends Activity {
           linear_acceleration[0] = event.values[0] - gravity[0];
           linear_acceleration[1] = event.values[1] - gravity[1];
           linear_acceleration[2] = event.values[2] - gravity[2];
+          
+          mOutStream = mSocket.getOutputStream();
+          mOutStream.write(linear_acceleration[0]);
+          mOutStream.write(linear_acceleration[1]);
+          mOutStream.write(linear_acceleration[2]);
     }
 }
