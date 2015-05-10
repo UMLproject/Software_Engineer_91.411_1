@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/exploded-aar/com.google.android.support/wearable/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="27f19641b81b1078e653d2f0e5d1ed44d158a785">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/classes-795ee9cb1170469b170bd3db440218ccca6532f5.jar" />
+    </item>
+    <item
+        jar="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/classes-31baf5f441a4f762be402c1bbf481318bb1cce86.jar" />
+    </item>
+    <item
+        jar="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/classes-237ca1a1c00f1dca1df1aa981de199849ac5e3fb.jar" />
+    </item>
+    <item
+        jar="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-ac853204b31132f7b6ce286a0bc4e54efa9b41b3.jar" />
+    </item>
+    <item
+        jar="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/classes-bcef8f256954d514dd18b0e6e4a9b13a7e430cea.jar" />
+    </item>
+    <item
+        jar="/Users/jacky/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-3e09038577600e4ea8f3ebf4f7f54a8b13540def.jar" />
+    </item>
+    <item
+        jar="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/Users/jacky/Desktop/Software_Engineer_91.411_1/1_Sensor/Code/app/build/intermediates/pre-dexed/debug/classes-3c3e50b4fca3afcd992e5d0f7c93bef26dcfd1e6.jar" />
+    </item>
+
+</items>

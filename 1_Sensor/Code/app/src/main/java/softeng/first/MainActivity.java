@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
         if (mBluetoothAdapter != null) {
             if (!mBluetoothAdapter.isEnabled()) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                int REQUEST_ENABLE_BT;
+                int REQUEST_ENABLE_BT = 0;
                 startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
             }
         } else { //does not support bluetooth
@@ -78,7 +78,7 @@ public class MainActivity extends Activity {
 
     public void onSensorChanged(SensorEvent event){
         // now subtract gSensor output from mSensor output
-        final float alpha = 0.8;
+        final float alpha = 0.8f;
           gravity[0] = alpha * gravity[0] + (1 - alpha) * event.values[0];
           gravity[1] = alpha * gravity[1] + (1 - alpha) * event.values[1];
           gravity[2] = alpha * gravity[2] + (1 - alpha) * event.values[2];
